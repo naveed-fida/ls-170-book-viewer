@@ -1,0 +1,12 @@
+<h2 class="content-subhead">Table of Contents</h2>
+
+<div class="pure-menu">
+  <ul class="pure-menu-list">
+    <% @toc.each_with_index do |line, index|%>
+    <li class="pure-menu-item">
+      <a href="/chapter/<%= index + 1 %>" class="pure-menu-link"><%= line %></a>
+    </li>
+    <% end %>
+  </ul>
+</div>
+
